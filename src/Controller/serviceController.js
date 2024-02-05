@@ -4,7 +4,7 @@ const service = async function (req, res) {
   try {
     const { name, email, phoneNumber,domain } = req.body;
     const services = new serviceModells ({
-        name, email, phoneNumber,domain,
+        name:name, email:email, phoneNumber:phoneNumber,domain:domain
 
     });
     await services.save()
