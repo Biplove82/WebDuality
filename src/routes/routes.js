@@ -2,10 +2,10 @@
 const router= require("express").Router();
 const { consultation } = require("../Controller/consultationController");
 const { service } = require("../Controller/serviceController");
-const{ createUser, signup }=require("../Controller/userController");
+//const{ createUser, signup }=require("../Controller/userController");
 
-router.post("/create-users",createUser);
-router.post("/sign-up",signup);
+// router.post("/create-users",createUser);
+// router.post("/sign-up",signup);
 
 
 //consultation Routes
