@@ -1,15 +1,15 @@
 const mongoose = require("mongoose");
 const consultationSchema = new mongoose.Schema({
     
-    yourName :{type:String, trim:true},
+    Name :{type:String, trim:true},
 
-    email:{ type: String, required: true,unique:true,trim:true},
+    email:{ type: String, trim:true},
 
-    organization:{type:String,required:true,trim:true},
+    organization:{type:String,trim:true},
 
-    phoneNumber:{type:Number,required:true,unique:true},
+    phoneNumber:{type:Number},
     
-    projectDetail:{type:string},
+    projectDetail:{type:String},
     
 
 },{timestamps:true});
