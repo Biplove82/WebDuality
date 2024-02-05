@@ -43,16 +43,6 @@ const signup = async function(req,res){
         
     };
 
-    //User Login
-    const login =async function(req,res){
-      try {
-        let{email,password}=req.body;
-        
-      } catch (error) {
-        
-      }
-       
-    }
 
 
 

@@ -1,8 +1,11 @@
-
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const app = express();
+const db=process.env.MONGODB_URI
+
+
 
 app.use(cors());
 
@@ -14,7 +17,7 @@ const router = require("./routes/routes");
 app.use("/v1", router);
 
 mongoose
-  .connect( "mongodb+srv://webduality:WNRsDx3qZ6hKlFLI@cluster0.3brqj7o.mongodb.net/user?retryWrites=true&w=majority",{
+  .connect( db,{
     })
   .then(() => console.log("MongoDB is connected"))
   .catch((err) => console.error(err));
