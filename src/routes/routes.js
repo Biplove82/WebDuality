@@ -12,7 +12,7 @@ const { service } = require("../Controller/serviceController");
 router.post("/consultation", consultation);
 
 //service routes
-router.post("/apply",service);
+router.post("/apply", service);
 
 
 module.exports=router;
