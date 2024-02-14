@@ -8,7 +8,7 @@ const service = async function (req, res) {
 
     })
     await services.save()
-    res.status(200).json({msg:"service apply"})
+    res.status(200).json({msg:"service apply sucessfully"})
        
  } catch (error) {
     res.status(500).send({ msg: "server error" });
