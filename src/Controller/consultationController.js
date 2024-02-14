@@ -1,3 +1,6 @@
+const  consultModells = require("../Modells/consultationModells");
+
+
 
 const consultation = async function (req, res) {
   try {
@@ -7,6 +10,7 @@ const consultation = async function (req, res) {
     if (!name || !email || !organization || !phoneNumber || !projectDetail) {
       return res.status(400).json({ message: "Missing required fields" });
     }
+    
     
     // Create a new instance of the consultation model
     const consultant = new consultModells({
